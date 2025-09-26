@@ -13,9 +13,11 @@ export default function AuthLayout({
 }) {
   return (
     // <- Paréntesis de apertura
-    <div className="grid grid-cols-2 h-screen">
-      <div className="flex items-center justify-center">{children}</div>
-      <div className="bg-cyan-200 w-full" />
+    <div className="h-screen grid grid-cols-1 md:grid-cols-2">
+      <div className="flex flex-col items-center justify-center">
+        {children}
+      </div>
+      <div className="bg-violet-400 w-full" />
     </div>
   ); // <- Paréntesis de cierre
 }
